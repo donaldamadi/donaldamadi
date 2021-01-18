@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Hi, I'm Obinna! Just a penultimate year student trying to find my feet in tech, engaging in projects here and there with the aim of leaving a mark, making people know I was here. Aim to establish myself as a full stack mobile developer and ML engineer and so far, I've worked on some projects using django and flutter. Currently, I'm leraning and discovering the myths and wonders of flutter by building UIs, working with databases and animations and improving my state management. Looking for flutter internship placements to learn more, discover more, build more. Please recruit me 😄
+Hi, I'm Obinna! Just a penultimate year student trying to find my feet in tech, engaging in projects here and there with the aim of leaving a mark, making people know I was here. Aim to establish myself as a full stack mobile developer and ML engineer and so far, I've worked on some projects using django and flutter. Currently, I'm learning and discovering the myths and wonders of flutter by building UIs, working with databases and animations and improving my state management. Looking for flutter internship placements to learn more, discover more, build more. Please recruit me 😄
 
 
 <!--
