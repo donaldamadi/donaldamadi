@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-Hi, I'm Obinna! Trying to change the world one line of a code at a time.
+Welcome to my space where I try to change the world one line of code at a time.
 
 
 <!--
