@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190" role="img" aria-label="PinDey is live in production at pindey.app, built end to end.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e2b"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 1.8s infinite ease-out; }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+    .chip { animation: pop 6s infinite both; }
+    .c1 { animation-delay: 0s; } .c2 { animation-delay: 0.25s; } .c3 { animation-delay: 0.5s; }
+    .c4 { animation-delay: 0.75s; } .c5 { animation-delay: 1s; }
+    @keyframes pop {
+      0% { opacity: 0; }
+      8%, 90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <rect width="900" height="190" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="188" rx="19" fill="none" stroke="#34d399" stroke-opacity="0.35"/>
+
+  <circle class="pulse" cx="52" cy="46" r="6" fill="#34d399"/>
+  <circle cx="52" cy="46" r="6" fill="#34d399"/>
+  <text x="68" y="51" class="mono" font-size="13" font-weight="700" letter-spacing="2" fill="#34d399">LIVE IN PRODUCTION</text>
+
+  <text x="44" y="108" font-size="46" font-weight="800" fill="#f8fafc">PinDey</text>
+  <text x="46" y="140" font-size="16" fill="#cbd5e1">Built end to end. Every layer, every decision, mine.</text>
+
+  <g class="mono" font-size="12" font-weight="600">
+    <g class="chip c1"><rect x="46" y="154" width="64" height="22" rx="11" fill="#0f172a" stroke="#38bdf8"/><text x="78" y="169" text-anchor="middle" fill="#7dd3fc">mobile</text></g>
+    <g class="chip c2"><rect x="118" y="154" width="72" height="22" rx="11" fill="#0f172a" stroke="#60a5fa"/><text x="154" y="169" text-anchor="middle" fill="#93c5fd">backend</text></g>
+    <g class="chip c3"><rect x="198" y="154" width="54" height="22" rx="11" fill="#0f172a" stroke="#818cf8"/><text x="225" y="169" text-anchor="middle" fill="#a5b4fc">infra</text></g>
+    <g class="chip c4"><rect x="260" y="154" width="38" height="22" rx="11" fill="#0f172a" stroke="#a78bfa"/><text x="279" y="169" text-anchor="middle" fill="#c4b5fd">AI</text></g>
+    <g class="chip c5"><rect x="306" y="154" width="72" height="22" rx="11" fill="#0f172a" stroke="#34d399"/><text x="342" y="169" text-anchor="middle" fill="#6ee7b7">product</text></g>
+  </g>
+
+  <g transform="translate(680 72)">
+    <rect width="176" height="48" rx="24" fill="url(#accent)"/>
+    <text x="88" y="31" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1120">pindey.app  ↗</text>
+  </g>
+  <text x="768" y="146" text-anchor="middle" class="mono" font-size="12" fill="#64748b">go poke at it</text>
+</svg>

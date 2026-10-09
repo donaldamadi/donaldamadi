@@ -1,25 +1,74 @@
-<div align="center">
+<p align="center">
+  <img src="assets/hero.svg" alt="Hey, I'm Donald. I started on the screen, kept zooming out, and now I build the whole thing." width="100%"/>
+</p>
 
-# Hey, I'm Donald 👋
+For years my whole world was the thing in your hand. Flutter, Swift, Kotlin, mostly fintech, where a rounding error ruins someone's day and *"works on my machine"* has never saved anybody. Then I kept following bugs past the screen, and the map got bigger.
 
-</div>
+<p align="center">
+  <img src="assets/zoom-out.svg" alt="Five rings, from the inside out: the screen, the API, the data, the infra, the problem." width="100%"/>
+</p>
 
-I started out building the part of software you hold in your hand. For years that was the whole world: Flutter, Swift, Kotlin, a release train, and a phone somewhere with two bars of signal that the app still had to feel fast on. Most of those years were in fintech, where a rounding error ruins someone's whole day and "it works on my machine" has never once saved anybody. I still love that work. I still think the empty states and the offline path are where you find out who really cared.
+Which is how I ended up building a whole product on my own. When you own every layer there's nobody to hand the hard part to, and honestly, that's the fun bit.
+
+<p align="center">
+  <a href="https://pindey.app"><img src="assets/pindey.svg" alt="PinDey, live in production at pindey.app. Built end to end." width="100%"/></a>
+</p>
+
+AI is part of how I work every day. Not as a party trick, more like a very fast pair who never gets tired of my questions. It's why one engineer can carry what used to take a small team, and it pushes the real craft up a level. Here's the loop:
+
+```mermaid
+flowchart LR
+    P(["🤔 a real problem"]) --> S["🧠 see the whole system"]
+    S --> B["🤖 build with AI in the loop"]
+    B --> L["🚀 ship it"]
+    L --> U["👀 watch real people use it"]
+    U -->|learn something| P
+```
+
+And right now, on any given day:
+
+```console
+donald@earth:~$ whoami
+product engineer · mobile at heart · AI in the loop
+
+donald@earth:~$ ps
+PROCESS          STATUS
+day-job          running
+pindey           running   # in prod. go look.
+side-projects    running   # some may never see daylight
+writing          running   # poetry, prose, long thoughts on software
+```
+
+A few things I've left lying around on pub.dev:
+
+| | |
+|:--:|:--|
+| 🧰 | **[flutter_skill_gen](https://pub.dev/packages/flutter_skill_gen)** writes `SKILL.md` files for AI assistants, because good tooling should teach the robots too. |
+| 🖼️ | **[multi_image_layout](https://pub.dev/packages/multi_image_layout)** lays out image grids so you never do that maths by hand again. |
+
+<details>
+<summary><b>📖 Got five minutes? The long version.</b></summary>
+<br/>
+
+I started out building the part of software you hold in your hand. For years that was the whole world: Flutter, Swift, Kotlin, a release train, and a phone somewhere with two bars of signal that the app still had to feel fast on. Most of those years were in fintech. I still love that work. I still think the empty states and the offline path are where you find out who really cared.
 
 Somewhere along the way the job got bigger than the screen. I kept following the bug past the API call, then past the server, then into the database and the queue and the cron job nobody remembered writing, and at some point I looked up and realised I wasn't really a mobile engineer anymore. I was just an engineer who happened to know mobile very well, the kind who sits with a problem until the whole system around it comes into view, and then builds whatever that system needs, on whatever layer it lives.
 
-That is how [PinDey](https://pindey.app) happened. It is mine from end to end, the app, the backend, the infrastructure, the decisions nobody sees and the ones everybody does, and it is live in production right now with real people using it. You can go poke at it. Building it taught me more about product than any title ever did, mostly because when you own every layer there is nobody else to hand the hard part to.
+That is how PinDey happened. It is mine from end to end, the app, the backend, the infrastructure, the decisions nobody sees and the ones everybody does, and it is live with real people using it. Building it taught me more about product than any title ever did.
 
-I build with AI the way I used to build with a good IDE, except the conversation goes both ways now. It sits in how I sketch architectures, how I read unfamiliar code, how I ship, and it is the reason one person can now carry a product that used to need a small team. I think that changes what engineering is. The craft moves up a level, toward understanding the problem properly, choosing the right shape for the system, and knowing which parts deserve your own hands. That is the part I find fun, and I am leaning all the way into it.
+I build with AI the way I used to build with a good IDE, except the conversation goes both ways now. It sits in how I sketch architectures, how I read unfamiliar code, how I ship. The craft moves up a level, toward understanding the problem properly, choosing the right shape for the system, and knowing which parts deserve your own hands. That's the part I find fun, and I'm leaning all the way into it.
 
-Some of that curiosity spills out as little open source things. [flutter_skill_gen](https://pub.dev/packages/flutter_skill_gen) is a CLI that writes `SKILL.md` files for AI assistants, because good tooling should teach the robots too, and [multi_image_layout](https://pub.dev/packages/multi_image_layout) exists because I got tired of doing image grid maths by hand.
+When I'm not doing that, I'm writing. It turns out finding the right word and finding the right abstraction are pretty much the same muscle.
 
-These days my time is split between the day job, PinDey, a handful of side projects that may or may not see daylight, and writing, which is the other thing I can't stop doing. Poetry, prose, the occasional long thought about software. It turns out finding the right word and finding the right abstraction are pretty much the same muscle.
+</details>
 
-If any of this sounds like your kind of thing, the longer version of the story lives at [donaldamadi.dev](https://donaldamadi.dev), and I am always happy to talk on [LinkedIn](https://www.linkedin.com/in/donald-amadi-7b95b817a/) or over [email](mailto:donaldamadi15@gmail.com).
+<br/>
 
-<div align="center">
+<p align="center">
+  <a href="https://donaldamadi.dev"><img src="https://img.shields.io/badge/donaldamadi.dev-the_full_story-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="donaldamadi.dev"/></a>
+  <a href="https://pindey.app"><img src="https://img.shields.io/badge/pindey.app-live-10B981?style=for-the-badge&logo=rocket&logoColor=white" alt="pindey.app"/></a>
+  <a href="https://www.linkedin.com/in/donald-amadi-7b95b817a/"><img src="https://img.shields.io/badge/LinkedIn-say_hi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:donaldamadi15@gmail.com"><img src="https://img.shields.io/badge/Email-drop_a_line-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
-*Think about the problem, see the system, build the thing. Then make it quiet.*
-
-</div>
+<p align="center"><i>Think about the problem, see the system, build the thing. Then make it quiet.</i></p>

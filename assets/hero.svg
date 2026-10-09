@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Hey, I'm Donald. I started on the screen, kept zooming out, and now I build the whole thing.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+    <clipPath id="card"><rect width="900" height="240" rx="20"/></clipPath>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .t { opacity: 0; animation: cycle 9s infinite both; }
+    .t2 { animation-delay: 3s; }
+    .t3 { animation-delay: 6s; }
+    @keyframes cycle {
+      0% { opacity: 0; transform: translateY(10px); }
+      6%, 28% { opacity: 1; transform: translateY(0); }
+      33%, 100% { opacity: 0; transform: translateY(-6px); }
+    }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .ring { transform-box: fill-box; transform-origin: center; animation: ripple 4.5s infinite ease-out both; }
+    .r2 { animation-delay: 1.5s; }
+    .r3 { animation-delay: 3s; }
+    @keyframes ripple {
+      0% { transform: scale(0.35); opacity: 0.9; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+  </style>
+
+  <rect width="900" height="240" rx="20" fill="url(#bg)"/>
+  <rect width="900" height="240" rx="20" fill="url(#dots)"/>
+
+  <text x="52" y="62" class="mono" font-size="15" fill="#64748b">~/donald $ cat intro.md<tspan class="caret" fill="#38bdf8"> ▍</tspan></text>
+  <text x="52" y="122" font-size="50" font-weight="800" fill="#f8fafc">Hey, I'm Donald.</text>
+
+  <g font-size="24" font-weight="600" fill="url(#accent)">
+    <text class="t t1" x="52" y="170">I started on the screen.</text>
+    <text class="t t2" x="52" y="170">Then I kept zooming out.</text>
+    <text class="t t3" x="52" y="170">Now I build the whole thing.</text>
+  </g>
+
+  <text x="52" y="208" class="mono" font-size="14" fill="#94a3b8">product engineer  ·  mobile at heart  ·  AI in the loop</text>
+
+  <!-- phone with rings rippling outward -->
+  <g clip-path="url(#card)"><g transform="translate(740 120)">
+    <circle class="ring r1" r="90" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <circle class="ring r2" r="90" fill="none" stroke="#818cf8" stroke-width="2"/>
+    <circle class="ring r3" r="90" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <rect x="-34" y="-60" width="68" height="120" rx="14" fill="#0f172a" stroke="url(#accent)" stroke-width="3"/>
+    <rect x="-12" y="-52" width="24" height="5" rx="2.5" fill="#334155"/>
+    <rect x="-24" y="-36" width="48" height="10" rx="3" fill="#38bdf8" opacity="0.8"/>
+    <rect x="-24" y="-20" width="34" height="8" rx="3" fill="#475569"/>
+    <rect x="-24" y="-6" width="40" height="8" rx="3" fill="#475569"/>
+    <rect x="-24" y="10" width="48" height="26" rx="5" fill="#a78bfa" opacity="0.5"/>
+    <circle cx="0" cy="48" r="4" fill="#334155"/>
+  </g></g>
+</svg>
