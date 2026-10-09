@@ -8,10 +8,10 @@ For years my whole world was the thing in your hand. Flutter, Swift, Kotlin, mos
   <img src="assets/zoom-out.svg" alt="Five rings, from the inside out: the screen, the API, the data, the infra, the problem." width="100%"/>
 </p>
 
-Which is how I ended up building a whole product on my own. When you own every layer there's nobody to hand the hard part to, and honestly, that's the fun bit.
+Which is how I ended up building a whole product on my own. You know that moment at an owambe, a concert or a packed market where your friends are *"somewhere here"* and the phone just keeps ringing out? PinDey fixes that. Open it, tap a friend, and an arrow points you straight to them, telling you warmer or colder as you walk.
 
 <p align="center">
-  <a href="https://pindey.app"><img src="assets/pindey.svg" alt="PinDey, live in production at pindey.app. Built end to end." width="100%"/></a>
+  <a href="https://pindey.app"><img src="assets/pindey.svg" alt="PinDey, live in production at pindey.app. Find your friends in a crowd, phone to phone. Where you dey? We go find you." width="100%"/></a>
 </p>
 
 AI is part of how I work every day. Not as a party trick, more like a very fast pair who never gets tired of my questions. It's why one engineer can carry what used to take a small team, and it pushes the real craft up a level. Here's the loop:
@@ -54,7 +54,9 @@ I started out building the part of software you hold in your hand. For years tha
 
 Somewhere along the way the job got bigger than the screen. I kept following the bug past the API call, then past the server, then into the database and the queue and the cron job nobody remembered writing, and at some point I looked up and realised I wasn't really a mobile engineer anymore. I was just an engineer who happened to know mobile very well, the kind who sits with a problem until the whole system around it comes into view, and then builds whatever that system needs, on whatever layer it lives.
 
-That is how PinDey happened. It is mine from end to end, the app, the backend, the infrastructure, the decisions nobody sees and the ones everybody does, and it is live with real people using it. Building it taught me more about product than any title ever did.
+That is how PinDey happened. It started with a very Lagos problem: you're at a party, your people are "by the bar", and there are five bars. A pin on a map is tens of metres off and doesn't tell you which way to walk, so PinDey gives you an arrow, a distance, and the old warmer or colder game, with haptics that speed up as you close in. My favourite decision in the whole thing is that the Finder is honest. When the phone genuinely can't tell which way to point, it says *"very close, look around"* instead of confidently sending you the wrong way. The privacy side got the same care: there's no location history, positions disappear about two minutes after the last update, and nothing gets sold.
+
+It is mine from end to end, the app, the backend, the infrastructure, the decisions nobody sees and the ones everybody does. Building it taught me more about product than any title ever did, mostly because when you own every layer there's nobody to hand the hard part to. Honestly, that's the fun bit.
 
 I build with AI the way I used to build with a good IDE, except the conversation goes both ways now. It sits in how I sketch architectures, how I read unfamiliar code, how I ship. The craft moves up a level, toward understanding the problem properly, choosing the right shape for the system, and knowing which parts deserve your own hands. That's the part I find fun, and I'm leaning all the way into it.
 

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190" role="img" aria-label="PinDey is live in production at pindey.app, built end to end.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="PinDey, live in production at pindey.app. Find your friends in a crowd, phone to phone. Where you dey? We go find you.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#052e2b"/>
       <stop offset="1" stop-color="#0b1120"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#34d399"/>
       <stop offset="1" stop-color="#38bdf8"/>
     </linearGradient>
@@ -17,37 +17,72 @@
       0% { transform: scale(1); opacity: 0.7; }
       100% { transform: scale(3); opacity: 0; }
     }
-    .chip { animation: pop 6s infinite both; }
+    .chip { animation: pop 9s infinite both; }
     .c1 { animation-delay: 0s; } .c2 { animation-delay: 0.25s; } .c3 { animation-delay: 0.5s; }
     .c4 { animation-delay: 0.75s; } .c5 { animation-delay: 1s; }
     @keyframes pop {
       0% { opacity: 0; }
-      8%, 90% { opacity: 1; }
+      6%, 92% { opacity: 1; }
       100% { opacity: 0; }
+    }
+    /* the Finder: arrow hunts for a friend, then settles as you get close */
+    .arrow { transform-box: view-box; transform-origin: 735px 104px; animation: hunt 9s infinite ease-in-out; }
+    @keyframes hunt {
+      0% { transform: rotate(-70deg); }
+      12% { transform: rotate(35deg); }
+      24% { transform: rotate(-20deg); }
+      36% { transform: rotate(12deg); }
+      50%, 100% { transform: rotate(0deg); }
+    }
+    .beat { transform-box: fill-box; transform-origin: center; animation: beat 9s infinite both; }
+    @keyframes beat {
+      0%, 60% { transform: scale(0.6); opacity: 0; }
+      66% { transform: scale(1); opacity: 0.9; }
+      74% { transform: scale(1.5); opacity: 0; }
+      78% { transform: scale(0.6); opacity: 0.9; }
+      86%, 100% { transform: scale(1.6); opacity: 0; }
+    }
+    .d { opacity: 0; animation: step 9s infinite both; }
+    .d2 { animation-delay: 3s; }
+    .d3 { animation-delay: 6s; }
+    @keyframes step {
+      0% { opacity: 0; }
+      4%, 30% { opacity: 1; }
+      33%, 100% { opacity: 0; }
     }
   </style>
 
-  <rect width="900" height="190" rx="20" fill="url(#bg)"/>
-  <rect x="1" y="1" width="898" height="188" rx="19" fill="none" stroke="#34d399" stroke-opacity="0.35"/>
+  <rect width="900" height="240" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="238" rx="19" fill="none" stroke="#34d399" stroke-opacity="0.35"/>
 
   <circle class="pulse" cx="52" cy="46" r="6" fill="#34d399"/>
   <circle cx="52" cy="46" r="6" fill="#34d399"/>
   <text x="68" y="51" class="mono" font-size="13" font-weight="700" letter-spacing="2" fill="#34d399">LIVE IN PRODUCTION</text>
 
-  <text x="44" y="108" font-size="46" font-weight="800" fill="#f8fafc">PinDey</text>
-  <text x="46" y="140" font-size="16" fill="#cbd5e1">Built end to end. Every layer, every decision, mine.</text>
+  <text x="44" y="106" font-size="46" font-weight="800" fill="#f8fafc">PinDey</text>
+  <text x="46" y="138" font-size="17" fill="#e2e8f0">Find your friends in a crowd, phone to phone.</text>
+  <text x="46" y="166" font-size="15" font-style="italic" fill="#6ee7b7">"Where you dey? We go find you."</text>
 
   <g class="mono" font-size="12" font-weight="600">
-    <g class="chip c1"><rect x="46" y="154" width="64" height="22" rx="11" fill="#0f172a" stroke="#38bdf8"/><text x="78" y="169" text-anchor="middle" fill="#7dd3fc">mobile</text></g>
-    <g class="chip c2"><rect x="118" y="154" width="72" height="22" rx="11" fill="#0f172a" stroke="#60a5fa"/><text x="154" y="169" text-anchor="middle" fill="#93c5fd">backend</text></g>
-    <g class="chip c3"><rect x="198" y="154" width="54" height="22" rx="11" fill="#0f172a" stroke="#818cf8"/><text x="225" y="169" text-anchor="middle" fill="#a5b4fc">infra</text></g>
-    <g class="chip c4"><rect x="260" y="154" width="38" height="22" rx="11" fill="#0f172a" stroke="#a78bfa"/><text x="279" y="169" text-anchor="middle" fill="#c4b5fd">AI</text></g>
-    <g class="chip c5"><rect x="306" y="154" width="72" height="22" rx="11" fill="#0f172a" stroke="#34d399"/><text x="342" y="169" text-anchor="middle" fill="#6ee7b7">product</text></g>
+    <g class="chip c1"><rect x="46" y="186" width="64" height="24" rx="12" fill="#0f172a" stroke="#38bdf8"/><text x="78" y="202" text-anchor="middle" fill="#7dd3fc">Spaces</text></g>
+    <g class="chip c2"><rect x="118" y="186" width="64" height="24" rx="12" fill="#0f172a" stroke="#60a5fa"/><text x="150" y="202" text-anchor="middle" fill="#93c5fd">Finder</text></g>
+    <g class="chip c3"><rect x="190" y="186" width="56" height="24" rx="12" fill="#0f172a" stroke="#818cf8"/><text x="218" y="202" text-anchor="middle" fill="#a5b4fc">Flare</text></g>
+    <g class="chip c4"><rect x="254" y="186" width="56" height="24" rx="12" fill="#0f172a" stroke="#a78bfa"/><text x="282" y="202" text-anchor="middle" fill="#c4b5fd">Radar</text></g>
+    <g class="chip c5"><rect x="318" y="186" width="92" height="24" rx="12" fill="#0f172a" stroke="#34d399"/><text x="364" y="202" text-anchor="middle" fill="#6ee7b7">Ghost mode</text></g>
   </g>
 
-  <g transform="translate(680 72)">
-    <rect width="176" height="48" rx="24" fill="url(#accent)"/>
-    <text x="88" y="31" text-anchor="middle" font-size="18" font-weight="800" fill="#0b1120">pindey.app  ↗</text>
+  <text x="560" y="51" class="mono" font-size="13" fill="#94a3b8">pindey.app  ↗</text>
+
+  <!-- mini Finder -->
+  <circle cx="735" cy="104" r="74" fill="#0f172a" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="735" cy="104" r="50" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <circle class="beat" cx="735" cy="104" r="70" fill="none" stroke="#34d399" stroke-width="3"/>
+  <g class="arrow">
+    <path d="M735 52 L760 108 L742 100 L742 150 L728 150 L728 100 L710 108 Z" fill="url(#accent)"/>
   </g>
-  <text x="768" y="146" text-anchor="middle" class="mono" font-size="12" fill="#64748b">go poke at it</text>
+  <g class="mono" font-size="14" font-weight="700" text-anchor="middle">
+    <text class="d d1" x="735" y="208" fill="#94a3b8">42 m · keep walking</text>
+    <text class="d d2" x="735" y="208" fill="#fbbf24">11 m · warmer</text>
+    <text class="d d3" x="735" y="208" fill="#34d399">2 m · look around</text>
+  </g>
 </svg>
