@@ -1,9 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" alt="Donald Amadi. I build mobile and web products, from the first screen to the server behind it. Product engineer in Lagos: React Native, React, Flutter, TypeScript, Node.js." width="100%">
+  <img src="assets/hero-light.svg" alt="Donald Amadi. I build mobile and web products, from the first screen to the server behind it. Product engineer across mobile, web and backend: Flutter, React Native, React, Node.js." width="100%">
 </picture>
 
-Five years shipping mobile apps, mostly in fintech, plus the web apps and Node services behind them. Open to **React Native** and senior product engineering roles.
+Five years shipping mobile apps, mostly in fintech, plus the web apps and Node services behind them. Open to senior product engineering roles across mobile, web and the backend.
 
 **[Portfolio](https://donaldamadi.dev)** &nbsp;|&nbsp; [CV](https://donaldamadi.dev/cv) &nbsp;|&nbsp; [LinkedIn](https://www.linkedin.com/in/donald-amadi-7b95b817a/) &nbsp;|&nbsp; [Email](mailto:donaldamadi15@gmail.com)
 
