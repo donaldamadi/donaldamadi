@@ -1,76 +1,97 @@
-<p align="center">
-  <img src="assets/hero.svg" alt="Hey, I'm Donald. I started on the screen, kept zooming out, and now I build the whole thing." width="100%"/>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" alt="Donald Amadi. I build mobile and web products, from the first screen to the server behind it. Product engineer in Lagos: React Native, React, Flutter, TypeScript, Node.js." width="100%">
+</picture>
 
-For years my whole world was the thing in your hand. Flutter, Swift, Kotlin, mostly fintech, where a rounding error ruins someone's day and *"works on my machine"* has never saved anybody. Then I kept following bugs past the screen, and the map got bigger.
+I'm a product engineer in Lagos with five years of shipping mobile apps, mostly in fintech, where a rounding error ruins someone's day and *"works on my machine"* has never saved anybody. I work in **React Native**, **Flutter**, and native **Swift** and **Kotlin** on mobile, **React**, **Next.js** and **TypeScript** on the web, and **Node.js** on the server.
 
-<p align="center">
-  <img src="assets/zoom-out.svg" alt="Five rings, from the inside out: the screen, the API, the data, the infra, the problem." width="100%"/>
-</p>
+**Right now:** building [PinDey](https://pindey.app), and open to React Native and senior product engineering roles, remote or relocating.
 
-Which is how I ended up building a whole product on my own. You know that moment at an owambe, a concert or a packed market where your friends are *"somewhere here"* and the phone just keeps ringing out? PinDey fixes that. Open it, tap a friend, and an arrow points you straight to them, telling you warmer or colder as you walk.
+[Portfolio](https://donaldamadi.dev) &nbsp;|&nbsp; [CV (PDF)](https://donaldamadi.dev/cv) &nbsp;|&nbsp; [LinkedIn](https://www.linkedin.com/in/donald-amadi-7b95b817a/) &nbsp;|&nbsp; [Email](mailto:donaldamadi15@gmail.com)
 
-<p align="center">
-  <a href="https://pindey.app"><img src="assets/pindey.svg" alt="PinDey, live in production at pindey.app. Find your friends in a crowd, phone to phone. Where you dey? We go find you." width="100%"/></a>
-</p>
+## PinDey
 
-AI is part of how I work every day. Not as a party trick, more like a very fast pair who never gets tired of my questions. It's why one engineer can carry what used to take a small team, and it pushes the real craft up a level. Here's the loop:
+<a href="https://pindey.app">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pindey-dark.svg">
+    <img src="assets/pindey-light.svg" alt="PinDey, live in production at pindey.app. Find your friends in a crowd, phone to phone. Where you dey? We go find you. Built end to end: a Flutter app, a Next.js website and back office, and a NestJS API." width="100%">
+  </picture>
+</a>
+
+You're at an owambe, your people are "by the bar", and there are five bars. A pin on a map is tens of metres off and won't tell you which way to walk, so PinDey gives you an arrow, a distance and the old warmer or colder game. My favourite decision in it: when the phone can't tell which way to point, it says *"very close, look around"* instead of guessing. No location history, positions gone about two minutes after the last update, nothing sold.
+
+I built every layer of it, in one TypeScript monorepo against a single OpenAPI contract:
+
+| Surface | Built with |
+| :-- | :-- |
+| Mobile app | Flutter, iOS and Android |
+| Website and no-install browser tools | React, Next.js App Router, Tailwind, Cloudflare via OpenNext |
+| Back office | React, Next.js, server-only data access, two-factor sign-in |
+| API and realtime | Node.js, NestJS on Fastify, PostgreSQL + PostGIS, Redis, BullMQ, WebSockets, a transactional outbox, idempotency keys |
+
+[Try the walkthrough](https://pindey.app/try) or [see it on my portfolio](https://donaldamadi.dev/#pindey).
+
+## Selected work
+
+| Project | What it is | Built with |
+| :-- | :-- | :-- |
+| **Ofin Eko** | Every law of Lagos State in English or Yorùbá, offline and read aloud. Built solo, on the App Store and Google Play. | React Native |
+| **[ExtraCash](https://donaldamadi.dev/work/extracash-embedded-lending)** | Embedded lending inside a live banking app: open-banking eligibility, instant disbursement, card repayment. | Flutter |
+| **[Encrypted transport](https://donaldamadi.dev/work/aes-encrypted-transport)** | A networking layer that survives its key rotating mid-transfer, replaying every request exactly once. | Flutter |
+| **[MedPal Provider](https://donaldamadi.dev/work/medpal-telemedicine)** | Video and voice consultations for doctors, in English and Spanish, with CI that fails on translation drift. | Flutter, Agora |
+| **[Card-present POS](https://donaldamadi.dev/work/pos-platform-channels)** | A Flutter screen driving a vendor's Java card reader SDK over platform channels. | Flutter, Kotlin, Java |
+| **Uplines** | A web and mobile platform. I worked on the React web app and built native iOS widgets. | React, SwiftUI |
+| **Adduce** | An early-stage SaaS producing signed accessibility-compliance evidence for EN 301 549 and the EAA. | React, PostgreSQL |
+
+Case studies for the linked projects, with the decisions I made and the ones I turned down, are on [donaldamadi.dev](https://donaldamadi.dev/#work).
+
+## What I work with
+
+| | |
+| :-- | :-- |
+| **Mobile** | React Native, Flutter, Swift and SwiftUI, Kotlin, platform channels |
+| **Web** | React, Next.js (App Router), TypeScript, Tailwind CSS |
+| **Backend** | Node.js, NestJS, Fastify, Express, PostgreSQL + PostGIS, Prisma, Redis, BullMQ, WebSockets |
+| **Testing and shipping** | Playwright, Vitest, axe-core, GitHub Actions, Bitrise, Shorebird, Sentry, Vercel, Cloudflare |
+| **Fintech** | Wallets and ledgers, lending, card-present payments, open banking (Mono), KYC, Flutterwave, Paystack |
+
+## Open source
+
+- **[flutter_skill_gen](https://pub.dev/packages/flutter_skill_gen)**: a CLI that reads a Flutter project and writes `SKILL.md` files, so coding assistants start out knowing its architecture and conventions.
+- **[multi_image_layout](https://pub.dev/packages/multi_image_layout)**: lays out image and video grids so you never do that maths by hand again.
+
+## How I work
 
 ```mermaid
 flowchart LR
-    P(["🤔 a real problem"]) --> S["🧠 see the whole system"]
-    S --> B["🤖 build with AI in the loop"]
-    B --> L["🚀 ship it"]
-    L --> U["👀 watch real people use it"]
-    U -->|learn something| P
+    A([Start with the problem]) --> B[See the whole system]
+    B --> C[Build it, with help]
+    C --> D[Ship, then watch]
+    D -- learn something --> A
 ```
 
-And right now, on any given day:
+I use AI coding tools the way I use a good IDE. Tests and my own review still decide what ships.
 
-```console
-donald@earth:~$ whoami
-product engineer · mobile at heart · AI in the loop
+## Writing
 
-donald@earth:~$ ps
-PROCESS          STATUS
-day-job          running
-pindey           running   # in prod. go look.
-side-projects    running   # some may never see daylight
-writing          running   # poetry, prose, long thoughts on software
-```
+- [Your AI coding assistant is brilliant, but also has amnesia](https://thatmandonald.medium.com/your-ai-coding-assistant-is-brilliant-but-also-has-amnesia-42e2e8a4db0b) (Level Up Coding, 2026)
+- [Debugging your Flutter applications remotely](https://thatmandonald.medium.com/debugging-your-flutter-applications-remotely-6ded44d46bc) (Level Up Coding, 2023)
+- [Implementing Firebase dynamic linking in your Flutter app](https://thatmandonald.medium.com/implementing-firebase-dynamic-linking-in-your-flutter-app-3e9290dd3bc0) (Level Up Coding, 2022)
 
-A few things I've left lying around on pub.dev:
-
-| | |
-|:--:|:--|
-| 🧰 | **[flutter_skill_gen](https://pub.dev/packages/flutter_skill_gen)** writes `SKILL.md` files for AI assistants, because good tooling should teach the robots too. |
-| 🖼️ | **[multi_image_layout](https://pub.dev/packages/multi_image_layout)** lays out image grids so you never do that maths by hand again. |
+When I'm not writing about software, I'm writing poetry and prose. Finding the right word and finding the right abstraction are pretty much the same muscle.
 
 <details>
-<summary><b>📖 Got five minutes? The long version.</b></summary>
-<br/>
+<summary><b>Got five minutes? The long version.</b></summary>
+<br>
 
-I started out building the part of software you hold in your hand. For years that was the whole world: Flutter, Swift, Kotlin, a release train, and a phone somewhere with two bars of signal that the app still had to feel fast on. Most of those years were in fintech. I still love that work. I still think the empty states and the offline path are where you find out who really cared.
+I started out building the part of software you hold in your hand. For years that was the whole world: a release train, a store review queue, and a phone somewhere with two bars of signal that the app still had to feel fast on. Most of those years were in fintech, at a bank, a lender, a wallet, a payments company. I still think the empty states and the offline path are where you find out who really cared.
 
-Somewhere along the way the job got bigger than the screen. I kept following the bug past the API call, then past the server, then into the database and the queue and the cron job nobody remembered writing, and at some point I looked up and realised I wasn't really a mobile engineer anymore. I was just an engineer who happened to know mobile very well, the kind who sits with a problem until the whole system around it comes into view, and then builds whatever that system needs, on whatever layer it lives.
+The tools changed more than once along the way. Most of my mobile years were in Flutter, with native Swift and Kotlin whenever the platform needed it. Ofin Eko I built alone in React Native. On the web I live in React, Next.js and TypeScript, which is also what makes React Native feel like home: same components, same hooks, same way of thinking about state.
 
-That is how PinDey happened. It started with a very Lagos problem: you're at a party, your people are "by the bar", and there are five bars. A pin on a map is tens of metres off and doesn't tell you which way to walk, so PinDey gives you an arrow, a distance, and the old warmer or colder game, with haptics that speed up as you close in. My favourite decision in the whole thing is that the Finder is honest. When the phone genuinely can't tell which way to point, it says *"very close, look around"* instead of confidently sending you the wrong way. The privacy side got the same care: there's no location history, positions disappear about two minutes after the last update, and nothing gets sold.
-
-It is mine from end to end, the app, the backend, the infrastructure, the decisions nobody sees and the ones everybody does. Building it taught me more about product than any title ever did, mostly because when you own every layer there's nobody to hand the hard part to. Honestly, that's the fun bit.
-
-I build with AI the way I used to build with a good IDE, except the conversation goes both ways now. It sits in how I sketch architectures, how I read unfamiliar code, how I ship. The craft moves up a level, toward understanding the problem properly, choosing the right shape for the system, and knowing which parts deserve your own hands. That's the part I find fun, and I'm leaning all the way into it.
-
-When I'm not doing that, I'm writing. It turns out finding the right word and finding the right abstraction are pretty much the same muscle.
+Somewhere along the way the job got bigger than the screen. I kept following the bug past the API call, then past the server, into the database and the queue and the cron job nobody remembered writing, and realised I was an engineer who happened to know mobile very well. That's how PinDey happened: one product, every layer mine, and nobody to hand the hard part to. Honestly, that's the fun bit.
 
 </details>
 
-<br/>
+---
 
-<p align="center">
-  <a href="https://donaldamadi.dev"><img src="https://img.shields.io/badge/donaldamadi.dev-the_full_story-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="donaldamadi.dev"/></a>
-  <a href="https://pindey.app"><img src="https://img.shields.io/badge/pindey.app-live-10B981?style=for-the-badge&logo=rocket&logoColor=white" alt="pindey.app"/></a>
-  <a href="https://www.linkedin.com/in/donald-amadi-7b95b817a/"><img src="https://img.shields.io/badge/LinkedIn-say_hi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:donaldamadi15@gmail.com"><img src="https://img.shields.io/badge/Email-drop_a_line-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
-
-<p align="center"><i>Think about the problem, see the system, build the thing. Then make it quiet.</i></p>
+<sub>Think about the problem, see the system, build the thing. Then make it quiet.</sub>
